@@ -23,7 +23,7 @@ const Login = () => {
       <form onSubmit={onSubmit}>
         <div className='form-group'>
           <label htmlFor='email'>Email Address</label>
-          <input type='email' name='email' value={email} onchange={onChange} />
+          <input type='email' name='email' value={email} onChange={onChange} />
         </div>
         <div className='form-group'>
           <label htmlFor='password'>Password</label>
@@ -31,7 +31,7 @@ const Login = () => {
             type='password'
             name='password'
             value={password}
-            onchange={onChange}
+            onChange={onChange}
           />
         </div>
         <input
