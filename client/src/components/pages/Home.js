@@ -4,11 +4,13 @@ import ContactForm from '../contacts/ContactForm';
 import ContactFilter from '../contacts/ContactFilter';
 import AuthContext from '../../context/auth/authContext';
 
-const Home = () => {
+const Home = props => {
   const authContext = useContext(AuthContext);
 
+  const { loadUser } = authContext;
+
   useEffect(() => {
-    authContext.loadUser();
+    loadUser();
     // eslint-disable-next-line
   }, []);
 
